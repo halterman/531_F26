@@ -20,7 +20,7 @@ def make_random_list(n: int, max_size: int) -> list[int]:
     """ Creates a list of n random integers. All the
         elements are in the range 0...max_size - 1. """ 
     from random import randrange
-    result = []
+    result: list[int] = []
     while n:
         result.append(randrange(max_size))
         n -= 1
